@@ -4,6 +4,7 @@ backend/pharmabackend/*.pyc
 backend/pharmabackend/__pycache__
 backend/pharmabackend/db.sqlite3
 backend/pharmabackend/media
+backend/djongenv/Lib
 
 #Front
 
