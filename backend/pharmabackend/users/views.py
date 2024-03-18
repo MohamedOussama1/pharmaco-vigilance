@@ -11,4 +11,3 @@ def get_users(request):
 
     return HttpResponse(User.objects())
 
-
