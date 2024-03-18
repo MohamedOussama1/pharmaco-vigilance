@@ -35,7 +35,7 @@ class Patient(User):
 
 class PrescriptionDetail(EmbeddedDocument):
     medicine = ReferenceField(Medicine, required=True)
-    posologie = StringField()
+    dosage = StringField()
 
 
 class Prescription(DynamicDocument):
