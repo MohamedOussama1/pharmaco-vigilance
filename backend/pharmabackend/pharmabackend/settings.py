@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 ]
 
 EXTERNAL_APPS = [
-    'polls.apps.PollsConfig'
+    'users.apps.PollsConfig'
 ]
 
 INSTALLED_APPS += EXTERNAL_APPS
