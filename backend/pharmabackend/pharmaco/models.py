@@ -51,29 +51,14 @@ class Rendezvous(DynamicDocument):
     patient = ReferenceField(Patient)
     rendezvous_date = DateTimeField()
     description = StringField(max_length=1000)
-
-
-class Urgent_Rendezvous(DynamicDocument):
-    doctor = ReferenceField(Doctor)
-    patient = ReferenceField(Patient)
-    rendezvous_date = DateTimeField()
-    description = StringField(max_length=1000)
+    type = StringField()
 
 
 class Alert(DynamicDocument):
     patient = ReferenceField(Patient)
     description = StringField(max_length=1000)
-
-
-class Question(DynamicDocument):
-    title = StringField()
-    patient = ReferenceField(Patient)
-    doctor = ReferenceField(Doctor)
     date = DateTimeField()
 
-class Answer(DynamicDocument):
-    question = ReferenceField(Question)
-    answer = StringField()
 
 #class Consultant(DynamicDocument):
 #    patient = ReferenceField(Patient)
