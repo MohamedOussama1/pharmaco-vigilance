@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', '.localhost', '*']
 
 URI_STRING = "mongodb://localhost:27017"
+DB_NAME = "pharmaco"
 
 # Application definition
 
@@ -41,7 +42,7 @@ INSTALLED_APPS = [
 ]
 
 EXTERNAL_APPS = [
-    'users.apps.PollsConfig'
+    'pharmaco.apps.PollsConfig'
 ]
 
 INSTALLED_APPS += EXTERNAL_APPS
