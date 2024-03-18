@@ -58,6 +58,7 @@ class Alert(DynamicDocument):
     patient = ReferenceField(Patient)
     description = StringField(max_length=1000)
     date = DateTimeField()
+    type = StringField()
 
 
 #class Consultant(DynamicDocument):
